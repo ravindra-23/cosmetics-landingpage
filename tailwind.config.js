@@ -6,9 +6,13 @@ export default {
       colors: {
         dark: "#292019",
         black: "#000000",
+        body: "#72696A",
         button: "#B91122",
         buttonSecondary: "#FCC7C3",
         textLight: "#C8CED8",
+      },
+      backgroundImage: {
+        cta: "url('./assets/cta-bg.png')",
       },
       fontFamily: {
         abhaya: ["Abhaya Libre", "serif"],
@@ -16,9 +20,17 @@ export default {
       },
       content: {
         dottedlines: "url('./assets/dotted-line-bg.svg')",
-        abstractwaves: "url('./assets/AbstractWaves.png')",
-        sparkles: "url('./assets/Sparkles.png')",
-        circles: "url('./assets/Circles.png')",
+        ctaImage: "url('./assets/cta-image.png')",
+        ctaBg: "url('./assets/cta-bg.png')",
+      },
+      animation: {
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
     },
     screens: {
