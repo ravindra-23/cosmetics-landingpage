@@ -8,7 +8,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 const Choose = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
-    <section className="mx-auto min-h-full w-5/6 py-10 md:py-20">
+    <section id="aboutus" className="mx-auto min-h-full w-5/6 py-10 md:py-20">
       <div className="md:flex justify-between items-center">
         <div>
           <h4 className="text-poppoins italic text-[18px] text-[#7D7D7D]">
@@ -35,25 +35,33 @@ const Choose = () => {
         </div>
       </div>
 
-      <div className="w-4/5 mx-auto md:py-20">
-        <div className="md:basis-3/5 md:flex justify-between items-center">
+      <div className="w-4/5 mx-auto md:py-20 py-10">
+        <div className="md:flex justify-between items-center">
           {isAboveMediumScreens ? (
-            <ScrollParallax>
-              <img src={ChooseImage} alt="product" />
-            </ScrollParallax>
+            <div className="w-3/5">
+              <ScrollParallax>
+                <img
+                  className="w-full h-auto"
+                  src={ChooseImage}
+                  alt="product"
+                />
+              </ScrollParallax>
+            </div>
           ) : (
-            <img className="w-[350px]" src={ChooseImage} alt="product" />
+            <div className="w-full flex justify-center">
+              <img className="w-full h-auto" src={ChooseImage} alt="product" />
+            </div>
           )}
 
-          <div>
+          <div className="md:w-2/5 w-full">
             <h2 className="text-[22px] text-dark">Apply & Ingredients</h2>
-            <p className="text-[16px] leading-7 text-textLight">
+            <p className="text-[16px] leading-7 text-body">
               Give your face that gorgeous sun-kissed look with high-quality
               bronzers! Makeup city is a house to international brands that sell
               natural-looking bronzers. Bronzing is about giving your face the
               perfect dimension and warmth.
             </p>
-            <p className="text-[16px] leading-7 text-textLight">
+            <p className="text-[16px] leading-7 text-body">
               If you are looking for ways to warm up your pale skin, apply
               bronzer, and see the difference. Bronzer face seems the smart way
               to add glamour to your otherwise simplistic look.
