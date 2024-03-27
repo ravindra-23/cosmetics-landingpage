@@ -17,9 +17,9 @@ const logos = [
 
 const Clients = () => {
   return (
-    <section className="mx-auto min-h-full w-5/6 py-10 md:py-20">
+    <section className="mx-auto w-5/6 py-10 md:py-20">
       <div>
-        <h4 className="text-[16px] font-poppins text-[#C8CED8] text-center">
+        <h4 className="text-[16px] font-poppins text-body text-center">
           SOME OF OUR TRUSTED CLIENTS
         </h4>
       </div>
